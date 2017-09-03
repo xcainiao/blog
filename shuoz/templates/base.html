@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="profile" href="http://microformats.org/profile/hcard">
+        <title>
+            Blog
+        </title>
+        <link rel="stylesheet" href="{% static 'css/aal.css' %}" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/sjl.css' %}" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/print.css' %}" type="text/css" media="print" charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/pygments-clean.css' %}" type="text/css" media="screen" charset="utf-8">
+
+        <script type="text/javascript" async="" src="{% static 'js/ga.js' %}"></script>
+        <script defer="" src="{% static 'js/jquery.js' %}" type="text/javascript"></script>
+        <script defer="" src="{% static 'js/jquery.timeago.js' %}" type="text/javascript"></script>
+        <script defer="" src="{% static 'js/sjl.js' %}" type="text/javascript"></script>
+        <script defer="" src="{% static 'js/print.js' %}" type="text/javascript"></script>
+
+</head>
+    <body>
+        <div class="wrap">
+            <div class="top group">
+                <header>
+                   <a href="/">hex(12345678)</a>
+                </header>
+                <nav>
+                    <a href="/">Blog</a>
+                    <span class="sep">-</span>
+                    <a href="/">Projects</a>
+                    <span class="sep">-</span>
+                    <a href="/">Links</a>
+                    <span class="sep"></span>
+                </nav>
+            </div>
+            <div class="hr">&nbsp;</div>
+                {% block body %}
+                {% endblock %}
+            <div class="hrb">&nbsp;</div>
+                <footer>
+                    <p>
+                        <a href="https://github.com/xcainiao/">GitHub</a> ・ 
+                        <a href="http://stevelosh.com">Thanks</a> 
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+</html>
