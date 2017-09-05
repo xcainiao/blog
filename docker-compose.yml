@@ -22,12 +22,22 @@ services:
     volumes:
       - ./shuoz:/usr/src/app
     ports:
-        - "8000:8000"
+        - "8000"
     dns:
         - 114.114.114.114
         - 8.8.8.8
     links:
       - mysqldb
+  nginx:
+    restart: always
+    build: ./nginx/
+    ports:
+      - "80:80"
+    volumes:
+      - ./shuoz:/usr/src/app
+      - ./nginx/sites-enabled/:/etc/nginx/sites-enabled
+    links:
+      - web:web
 volumes:
   mysqldata:
     driver: local
