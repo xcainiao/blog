@@ -12,6 +12,7 @@ class blog(models.Model):
             ('programming','Programming'),
             ('nc', 'No'),
         )
+    article = models.CharField(max_length=152, blank=True)
     title = models.CharField(max_length=152, blank=True)
     category = models.CharField(max_length=30, choices=CHOICES, blank=True)
     file = models.FileField(upload_to='content/%Y/%m/', blank=True)

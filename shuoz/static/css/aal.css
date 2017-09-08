@@ -49,7 +49,7 @@ p,ul,ol,dl,blockquote,pre {margin: 0 0 25px;}
 
 li ul,li ol {margin: 0;}
 ul {list-style: outside disc;}
-ol {list-style: outside decimal;}
+ol {list-style: outside decimal;font-size: 52px}
 li {margin: 0 0 0 44px;}
 dd {padding-left: 25px;}
 blockquote {padding: 0 25px;}

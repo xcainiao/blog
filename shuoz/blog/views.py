@@ -24,10 +24,11 @@ def content(request, post_name):
     html = "404"
     post = dict()
     try:
-        p = blog.objects.get(title=post_name)
+        p = blog.objects.get(article=post_name)
     except:
-        return HttpResponse("<h1>file does not exist</h1>")
-    post['title'] = post_name
+        return render(request, "404.html")
+        # return HttpResponse("<h1>file does not exist</h1>")
+    post['title'] = p.title
     filename = os.path.join("/usr/src/app/upload", str(p.file))
     try:
         with open(filename, 'r', encoding="utf-8") as f:
