@@ -13,6 +13,9 @@ default.db
 # Vim
 *.swp
 
+#upload file
+upload/
+
 # C extensions
 *.so
 

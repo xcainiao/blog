@@ -10,6 +10,7 @@ body {
 body a {
   text-decoration: none;
   color: #A2A2A2;
+  line-height: 1;
 }
 body a:hover {
   text-decoration: underline;
@@ -20,7 +21,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;
+  /*font-family: HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;*/
   font-weight: normal;
 }
 body h1 a,
@@ -221,7 +222,7 @@ hr {
   margin-bottom: -50px;
 }
 .section-listing ol {
-  list-style-type: none;
+  list-style-type: inherit;
 }
 .section-listing ol li {
   margin: 0 0 25px 0;
