@@ -18,6 +18,9 @@ class blog(models.Model):
     file = models.FileField(upload_to='content/%Y/%m/', blank=True)
     date = models.DateTimeField('date', default = timezone.now)
     edit = models.DateTimeField('date', default = timezone.now)
+    
+    class Meta:    
+        ordering = ['-date']
 
 class ImagePost(models.Model):
     imgid = models.ForeignKey(blog, related_name='img')
