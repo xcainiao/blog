@@ -3,12 +3,13 @@ html {
 }
 body {
   text-rendering: optimizeLegibility;
-  color: #222222;
+  color: #A2A2A2;
   position: relative;
+  background: #1d1f21;
 }
 body a {
   text-decoration: none;
-  color: #e50053;
+  color: #A2A2A2;
 }
 body a:hover {
   text-decoration: underline;
@@ -28,7 +29,8 @@ body h3 a,
 body h4 a,
 body h5 a,
 body h6 a {
-  color: #222222;
+  color: #A2A2A2;
+  font-size: 70px;
 }
 body h1 a:hover,
 body h2 a:hover,
@@ -89,9 +91,9 @@ body pre {
   overflow-x: auto;
   border: 1px solid #d5d5d5;
   border-left: 10px solid #d5d5d5;
-  background-color: #fafafa;
   padding: 11px 15px 12px;
   margin-left: -25px;
+  border-color: #A2A2A2;
 }
 body pre::-webkit-scrollbar {
   height: 25px;
@@ -120,7 +122,6 @@ body p code,
 body li code,
 body table code {
   border: 1px solid #ccc;
-  background-color: #fafafa;
   font-size: 13px;
   padding: 1px 3px;
   line-height: 20px;
@@ -145,7 +146,7 @@ body .wrap .top header .amp {
   font-style: italic;
 }
 body .wrap .top header a {
-  color: #222222;
+  color: #6944FF;
 }
 body .wrap .top header a:hover {
   color: #e50053;
@@ -166,12 +167,12 @@ body .wrap .hr {
   margin-top: -12px;
   margin-bottom: 37px;
   height: 25px;
-  background: transparent url('/static/css/hr.png') top left no-repeat;
+  /*background: transparent url('/static/css/hr.png') top left no-repeat;*/
 }
 body .wrap .hrb {
   height: 25px;
   margin-top: 50px;
-  background: transparent url('/static/css/hrb.png') top left no-repeat;
+  /*background: transparent url('/static/css/hrb.png') top left no-repeat;*/
 }
 body .wrap footer {
   text-align: center;
@@ -226,8 +227,7 @@ hr {
   margin: 0 0 25px 0;
 }
 .section-listing ol li a {
-  font-size: 28px ;
-  color: #222222;
+  font-size: 55px ;
   display: block;
 }
 /*font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;*/

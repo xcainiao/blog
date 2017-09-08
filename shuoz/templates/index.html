@@ -3,12 +3,13 @@
 <div class="content">
     <div class="section-listing">
         <ol class="group">
+        </br></br>
         {% for blogpost in blogposts %}
             <li>
                 <a href="blog/{{ blogpost.title }}">
                     {{ blogpost.title }}
                 </a>
-                </br></br>
+                </br></br></br>
             </li>
         {% endfor %}
         </ol>
