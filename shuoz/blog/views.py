@@ -34,7 +34,7 @@ def content(request, post_name):
         with open(filename, 'r', encoding="utf-8") as f:
             content = f.read()
     except:
-        return HttpResponse("<h1>file does not exist</h1>")
+        return render(request, "404.html")    
     post['content'] = markdownify(content)
     post['date'] = p.date
     return render(request, "content.html", {'post': post}) 

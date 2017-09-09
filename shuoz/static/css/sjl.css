@@ -31,7 +31,7 @@ body h4 a,
 body h5 a,
 body h6 a {
   color: #A2A2A2;
-  font-size: 70px;
+  font-size: 45px;
 }
 body h1 a:hover,
 body h2 a:hover,
@@ -228,8 +228,8 @@ hr {
   margin: 0 0 25px 0;
 }
 .section-listing ol li a {
-  font-size: 55px ;
-  display: block;
+  font-size: 30px ;
+  /* display: block; */
 }
 /*font: normal 23px/32px HoeflerText-Regular, 'Hoefler Text', 'Goudy Old Style', 'Palatino', 'Palatino Linotype', serif;*/
 .section-listing ol li a:hover {
