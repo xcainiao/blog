@@ -33,7 +33,7 @@ html {overflow-y: scroll;}
 body {background: #fdfdfd; color: #353535; font: normal 18px/25px Palatino, "Palatino Linotype", serif; text-rendering: optimizeLegibility;}
 html>body {font-size: 18px; line-height: 25px;}
 
-img {display: inline-block; vertical-align: bottom;}
+img {display: inline-block; vertical-align: bottom; max-width: 100%; max-height: 100%;}
 
 h1,h2,h3,h4,h5,h6,strong,b,dt,th {font-weight: 700;}
 address,cite,em,i,caption,dfn,var {font-style: italic;}
@@ -45,7 +45,7 @@ h4 {margin: 0 0 22px; font-size: 16px; line-height: 22px;}
 h5 {margin: 0 0 22px; font-size: 14px; line-height: 22px;}
 h6 {margin: 0 0 22px; font-size: 12px; line-height: 22px;}
 
-p,ul,ol,dl,blockquote,pre {margin: 0 0 25px;}
+p,ul,ol,dl,blockquote,pre {margin: 0 0 25px;word-break: break-word;}
 
 li ul,li ol {margin: 0;}
 ul {list-style: outside disc;}

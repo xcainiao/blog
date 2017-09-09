@@ -5,6 +5,9 @@ from django.db import models
 import django.utils.timezone as timezone
 
 from markdownx.models import MarkdownxField
+from imagekit.models import ProcessedImageField
+from imagekit.processors import ResizeToFill
+
 
 # Create your models here.
 class blog(models.Model):
@@ -24,5 +27,11 @@ class blog(models.Model):
 
 class ImagePost(models.Model):
     imgid = models.ForeignKey(blog, related_name='img')
+    '''
+    img = ProcessedImageField(upload_to='img/%Y/%m/',
+        processors=[ResizeToFill(740, 546)],
+        format='JPEG',
+        options={'quality': 60})
+    '''
     img = models.ImageField(upload_to='img/%Y/%m/', blank=True)
     

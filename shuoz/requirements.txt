@@ -3,3 +3,4 @@ gunicorn
 gevent
 django-markdownx
 mysqlclient
+django-imagekit
