@@ -1,0 +1,9 @@
+﻿{% extends "base.html" %}
+{% block body %}
+<h2 id="blogs">Blogs</h2>
+<ul>
+{% for link in links%}
+<li><a href="{{ link.href }}"; style="color:red"; >{{ link.href }}</a>:   {{ link.info }}.</li>
+{% endfor %}
+</ul>
+{% endblock %}

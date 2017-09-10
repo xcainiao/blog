@@ -6,7 +6,7 @@ from django.http import HttpResponse, Http404
 
 from markdownx.utils import markdownify
 
-from blog.models import blog
+from blog.models import Blog, Links
 
 import locale
 import sys
@@ -15,7 +15,7 @@ import os
 
 def index(request):
     try:
-        p = blog.objects.all()
+        p = Blog.objects.all()
     except:
         return HttpResponse("<h1>something error</h1>")
     return render(request, "index.html", {'blogposts': p}) 
@@ -24,7 +24,7 @@ def content(request, post_name):
     html = "404"
     post = dict()
     try:
-        p = blog.objects.get(article=post_name)
+        p = Blog.objects.get(article=post_name)
     except:
         return render(request, "404.html")
         # return HttpResponse("<h1>file does not exist</h1>")
@@ -38,3 +38,10 @@ def content(request, post_name):
     post['content'] = markdownify(content)
     post['date'] = p.date
     return render(request, "content.html", {'post': post}) 
+
+def links(request):
+    try:
+        links = Links.objects.all()
+    except:
+        return HttpResponse("<h1>something error</h1>")
+    return render(request, "links.html", {"links": links})
