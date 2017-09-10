@@ -39,6 +39,9 @@ def content(request, post_name):
     post['date'] = p.date
     return render(request, "content.html", {'post': post}) 
 
+def about(request):
+    return render(request, "about.html")
+
 def links(request):
     try:
         links = Links.objects.all()
