@@ -4,3 +4,4 @@ gevent
 django-markdownx
 mysqlclient
 django-imagekit
+pillow>=8.3.2 # not directly required, pinned by Snyk to avoid a vulnerability
